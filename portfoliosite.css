@@ -1,0 +1,35 @@
+.top-bar-links{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.about-me:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.my-projects:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contact-me:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: inline;
+    background-color: #333;
+}
