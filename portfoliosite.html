@@ -1,20 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke's Portfolio</title>
-    <link rel="stylesheet" href="portfoliosite.css">
-</head>
-<body>
-<div class="top-bar">
-    <div class="logo">LE</div>
-    <p class="top-bar-links">
-        <span class="about-me" href="aboutme.html">About Me</span>
-        <span class="my-projects" href="myprojects.html">My Projects</span>
-        <span class="contact-me" href="contactme.html">Contact Me</span>
-    
-    </p>
-</div>
-</body>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luke's Portfolio</title>
+        <link rel="stylesheet" href="portfoliosite.css">
+    </head>
+    <body>
+        <div class="top-bar">
+            <p class="top-bar-links">
+                <span class="about-me-link" href="#about-me-section">About Me</span>
+                <span class="my-projects-link" href="myprojects.html">My Projects</span>
+                <span class="contact-me-link" href="contactme.html">Contact Me</span>
+            </p>
+        </div>
+        <hr>
+        <div class="intro">
+            <p class="intro-title">
+                Hi, I'm Luke!
+                <span class="intro-subtitle">
+                    <br>
+                    Computer Science Student at Teesside University
+                    <br>
+                    Welcome to my portfolio!
+                </span>
+            </p>
+        </div>
+        <section id="about-me-section"></section>
+        <div class="about-me">
+            <p class="about-me-title">About Me</p>
+            <p class="about-me-text">
+                I'm a student currently studying Computer Science at Teesside Univeristy.
+                I have a strong passion for programming, and enjoy learning and creating different solutions to broaden my knowlege.
+                This portfolio showcases some of my projects and skills, as I learn more and more about programming, and CS in general.                 
+            </p>
+        </div>
+        <div class="experience-and-education">
+            <p class="experience-and-education-title">
+                Experience and Education
+            </p>
+                <p class="experience-and-education-text">
+                    <span class="education">Education:</span>
+                    <br>
+                    <div class="education-grid">
+                        <div class="school teesside-university">
+                            <div class="school-header">
+                                <span class="school-title">Teesside University</span>
+                                <a href="https://www.tees.ac.uk/">
+                                    <img class="school-img teesside-university-img" src="images/teesside-university.png">
+                                </a>    
+                            </div>
+                            <div class="school-details">
+                                <span class="school-degree">BSc (Hons) Computer Science</span>
+                                <span class="school-date">2024 - 2027</span>
+                            </div>
+                        </div>
+                        <div class="school middlesbrough-college">
+                            <div class="school-header">
+                                <span class="school-title">Middlesbrough College</span>
+                                <a href="https://www.mbro.ac.uk/">
+                                    <img class="school-img middlesbrough-college-img" src="images/middlesbrough-college.png">
+                                </a>
+                            </div>
+                            <div class="school-details">
+                                <span class="school-degree">Level 3 A-Levels in:</span>
+                                <ul>
+                                    <li>Computer Science</li>
+                                    <li>Film Studies</li>
+                                    <li>Media Studies</li>
+                                </ul>
+                                <span class="school-date">2022 - 2024</span>
+                            </div>
+                        </div>
+                        <div class="school outwood-academy-acklam">
+                            <div class="school-header">
+                                <span class="school-title">Outwood Academy Acklam</span>
+                                <a href="https://www.acklam.outwood.com/">
+                                    <img class="school-img outwood-academy-acklam-img" src="images/outwood-academy-acklam.png">
+                                </a>    
+                            </div>
+                            <div class="school-details">
+                                <span class="school-degree">9 1-9 GCSEs including:</span>
+                                <ul>
+                                    <li>8 in Mathematics</li>
+                                    <li>7 in English Literature and Language</li>
+                                    <li>7 in Physics, Chemistry, and Biology</li>
+                                </ul>
+                                <span class="school-date">2017 - 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+        </div>
+    </body>
 </html>

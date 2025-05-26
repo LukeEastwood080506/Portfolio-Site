@@ -1,35 +1,214 @@
-.top-bar-links{
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline;
-    justify-content: space-between;
+.html {
+    scroll-behavior: smooth;
+}
+
+.html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+.top-bar{
+    background: #181818;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    position: fixed;
+    display: flex;
     align-items: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    margin-left: 30%;
-    margin-right: 30%;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
 }
 
-.about-me:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.my-projects:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.contact-me:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.logo{
-    font-size: 24px;
+.top-bar .top-bar-links {
+    margin: 0 auto;
+    font-size: 16px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    display: inline;
-    background-color: #333;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
 }
+
+.top-bar .top-bar-links > * {
+    padding: 0 15px;
+}
+
+.top-bar .top-bar-links > *:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    transition: text-decoration 0.3s ease;
+}
+
+.intro {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    padding-top: 180px;
+    padding-bottom: 120px;
+    color: white;
+    background: #181818;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+
+.intro-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.intro-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 180px;
+}
+
+.about-me {
+    text-align: center;
+    justify-content: center;
+    padding: 20px 20px;
+    background: #181818;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.about-me-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-me-text {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.experience-and-education {
+    justify-content: center;
+    background: #181818;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.experience-and-education-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.experience-and-education-text {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.education {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-left: 33vw;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.school {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    gap: 200px;
+}
+
+.school-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    min-width: 220px; 
+    max-width: 220px;
+}
+
+.school-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.school-img {
+    height: 60px;
+    width: auto;
+}
+
+.school-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+}
+
+.school-degree {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.school-date {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.school-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.teesside-university-img {
+    height: 90px;
+}
+
+
+.middlesbrough-college-img {
+    height: 90px;
+}
+
+.outwood-academy-acklam-img {
+    height: 80px;
+}
+
