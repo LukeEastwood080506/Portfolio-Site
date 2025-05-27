@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke's Portfolio</title>
+    <link rel="stylesheet" href="main-page.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <p class="top-bar-links">
+        <span
+          class="about-me-link"
+          onclick="document.getElementById('about-me-section').scrollIntoView({behavior: 'smooth'})"
+          >About Me</span
+        >
+        <span
+          class="my-projects-link"
+          onclick="window.location.href='my-projects.html'"
+          >My Projects</span
+        >
+        <span
+          class="contact-me-link"
+          onclick="document.getElementById('contact-me-section').scrollIntoView({behavior: 'smooth'})"
+          >Contact Me</span
+        >
+      </p>
+    </div>
+    <hr />
+    <div class="intro">
+      <p class="intro-title">
+        Hi, I'm Luke!
+        <span class="intro-subtitle">
+          <br />
+          Computer Science Student at Teesside University
+          <br />
+          Welcome to my portfolio!
+        </span>
+      </p>
+    </div>
+    <section id="about-me-section"></section>
+    <div class="about-me">
+      <p class="section-title">About Me</p>
+      <p class="about-me-text">
+        I'm a student currently studying Computer Science at Teesside
+        Univeristy. I have a strong passion for programming, and enjoy learning
+        and creating different solutions to broaden my knowlege. This portfolio
+        showcases some of my projects and skills, as I learn more and more about
+        programming, and CS in general.
+      </p>
+    </div>
+    <section id="experience-and-education-section"></section>
+    <div class="experience-and-education">
+      <p class="section-title">Experience and Education</p>
+      <span class="education">Education:</span>
+      <br />
+      <div class="education-grid">
+        <div class="school teesside-university">
+          <div class="school-header">
+            <span class="school-title">Teesside University</span>
+            <a href="https://www.tees.ac.uk/">
+              <img
+                class="school-img teesside-university-img"
+                src="images\teesside-univerity-black.png"
+              />
+            </a>
+          </div>
+          <div class="school-details">
+            <span class="school-degree">BSc (Hons) Computer Science</span>
+            <span class="school-date">2024 - 2027</span>
+          </div>
+        </div>
+        <div class="school middlesbrough-college">
+          <div class="school-header">
+            <span class="school-title">Middlesbrough College</span>
+            <a href="https://www.mbro.ac.uk/">
+              <img
+                class="school-img middlesbrough-college-img"
+                src="images/middlesbrough-college.png"
+              />
+            </a>
+          </div>
+          <div class="school-details">
+            <span class="school-degree">Level 3 A-Levels in:</span>
+            <ul>
+              <li>Computer Science</li>
+              <li>Film Studies</li>
+              <li>Media Studies</li>
+            </ul>
+            <span class="school-date">2022 - 2024</span>
+          </div>
+        </div>
+        <div class="school outwood-academy-acklam">
+          <div class="school-header">
+            <span class="school-title">Outwood Academy Acklam</span>
+            <a href="https://www.acklam.outwood.com/">
+              <img
+                class="school-img outwood-academy-acklam-img"
+                src="images/outwood-academy-acklam.png"
+              />
+            </a>
+          </div>
+          <div class="school-details">
+            <span class="school-degree">9 1-9 GCSEs including:</span>
+            <ul>
+              <li>8 in Mathematics</li>
+              <li>7 in English Literature and Language</li>
+              <li>7 in Physics, Chemistry, and Biology</li>
+            </ul>
+            <span class="school-date">2017 - 2022</span>
+          </div>
+        </div>
+      </div>
+      <span class="experience">Experience:</span>
+      <span class="experience-subtitle">
+        While I do not have any formal work experience, I have been involved in
+        various projects that have helped me develop my skills, both within and
+        outside of education.
+      </span>
+      <br />
+      <div class="experience-grid">
+        <div class="project university-project-one">
+          <div class="project-header">
+            <span class="project-title"
+              >University: <br />
+              Itinerary Manager Java Project</span
+            >
+          </div>
+          <div class="project-details">
+            <span class="project-description">
+              A project I worked on during my first year at university, the
+              focus was to create an application using Java, for a hypothetical
+              itinerary manager. My project recieved positive feedback, netting
+              it a 1st class mark.
+            </span>
+            <span class="project-date">
+              <br />
+              2024 - 2025
+            </span>
+          </div>
+        </div>
+        <div class="project university-project-two">
+          <div class="project-header">
+            <span class="project-title"
+              >University: <br />
+              SQL Query Development Project</span
+            >
+          </div>
+          <div class="project-details">
+            <span class="project-description">
+              A project I worked on during my first year at university, the
+              focus was to create a set of SQL queries to interact with a
+              database. It taught me a lot about database management and SQL.
+            </span>
+            <span class="project-date">
+              <br />
+              2025
+            </span>
+          </div>
+        </div>
+        <div class="project university-project-three">
+          <div class="project-header">
+            <span class="project-title"
+              >University: <br />
+              Team Application Design Project</span
+            >
+          </div>
+          <div class="project-details">
+            <span class="project-description">
+              In this project, I worked with a team to design an application for
+              a password manager. I was team leader, and was personally
+              responsible for the ideas and design of the overall application,
+              and specifically the home page. This project was a great
+              experience in teamwork and leadership, and I learned a lot about
+              application design, and I also recieved a 1st class mark.
+            </span>
+            <span class="project-date">
+              <br />
+              2025
+            </span>
+          </div>
+        </div>
+        <div class="project personal-project-one">
+          <div class="project-header">
+            <span class="project-title"
+              >Personal: <br />
+              JavaScript Cookie Clicker Clone</span
+            >
+          </div>
+          <div class="project-details">
+            <span class="project-description">
+              This was my first attempt at both using JavaScript, and creating a
+              game. I created a simple cookie clicker clone, which allowed me to
+              learn the basics of JavaScript, and how to create a simple game.
+              While it isn't complex nor perfect, it was a great learning
+              experience, and I am proud of what it is.
+            </span>
+            <span class="project-date">
+              <br />
+              2025
+            </span>
+          </div>
+        </div>
+        <div class="project personal-project-one">
+          <div class="project-header">
+            <span class="project-title"
+              >Personal: <br />
+              JavaScript To-Do Application</span
+            >
+          </div>
+          <div class="project-details">
+            <span class="project-description">
+              This was a slightly more complex project, where I created a simple
+              to-do application using JavaScript. It had a slightly more complex
+              scope, I had to learn how to use JavaScript to create HTML
+              elements dynamically. Through this project, I learned some of
+              JavaScript's vulnerabilities, and how to work around them, such as
+              the risks of innerHTML. I also used this project to learn about
+              APIs, I added a feature to take the user's location, and display
+              the weather using the OpenWeatherAPI. This was a great project to
+              learn more about JavaScript, and how to use APIs, and I am proud
+              of the result.
+            </span>
+            <span class="project-date">
+              <br />
+              2025
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="projects-more-info">
+        <p class="projects-more-info-text">
+          If you want to learn more about my projects, you can click the button
+          below, or at the top to visit the full dedicated page.
+        </p>
+        <button
+          class="projects-more-info-button"
+          onclick="window.location.href='my-projects.html'"
+        >
+          My Projects
+        </button>
+      </div>
+    </div>
+    <section id="contact-me-section"></section>
+    <div class="contact-me">
+      <p class="section-title">Contact Me</p>
+      <p class="contact-me-text">
+        <img
+          src="images/email.png"
+          style="height: 20px; vertical-align: middle"
+          ;
+        />
+        You can contact me via <span style="font-weight: 600">Email</span> at:
+        <a class="contact-me-email" href="mailto:@lukeeastwood080506@gmail.com">
+          <p class="contact-me-email-text">lukeeastwood080506@gmail.com</p>
+        </a>
+        <br />
+        <img
+          src="images/linkedin.png"
+          style="height: 20px; justify-content: center"
+          ;
+        />
+        Or you can find me on <span style="font-weight: 600">LinkedIn</span>:
+        <a
+          class="contact-me-linkedin"
+          href="https://www.linkedin.com/in/luke-eastwood-16b146332/"
+        >
+          <p class="contact-me-linkedin-text">Luke Eastwood</p>
+        </a>
+      </p>
+    </div>
+    <div class="footer">
+      <p class="footer-text">&copy; 2025 Luke Eastwood. All rights reserved.</p>
+    </div>
+  </body>
+</html>

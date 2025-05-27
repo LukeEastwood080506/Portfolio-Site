@@ -1,0 +1,46 @@
+.html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #d2d4c8;
+  color: white;
+}
+
+.top-bar {
+  background: #2e3532;
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+
+.top-bar .top-bar-links {
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.top-bar .top-bar-links > * {
+  padding: 0 15px;
+}
+
+.top-bar .top-bar-links > *:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  transition: text-decoration 0.3s ease;
+}
