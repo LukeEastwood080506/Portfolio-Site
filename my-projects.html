@@ -1,19 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Projects</title>
-    <link rel="stylesheet" href="my-projects.css">
-</head>
-<body>
+    <link rel="stylesheet" href="my-projects.css" />
+    <script src="my-projects.js"></script>
+  </head>
+  <body>
     <div class="top-bar">
       <p class="top-bar-links">
-        <span
-          class="home-link"
-          onclick="window.location.href='main-page.html'"
+        <span class="home-link" onclick="window.location.href='main-page.html'"
           >Home</span
         >
       </p>
     </div>
+    <div class="project-container">
+      <p class="section-title" style="padding-top: 50px">My Projects</p>
+      <p class="section-subtitle">
+        Here you can find some of my projects, both University and personal.
+        These projects showcase my skills and knowledge in various programming
+        languages and frameworks.
+      </p>
+      <p class="projects-jump-links">
+        <a href="#university-projects">University Projects</a> |
+        <a href="#personal-projects">Personal Projects</a>
+      </p>
+
+      <p
+        class="section-subtitle"
+        id="university-projects"
+        style="padding-top: 20px; font-weight: 600"
+      >
+        University Projects
+      </p>
+
+      <div class="project">
+        <h2>
+          Project 1: University Project - Itinerary Manager
+          <div class="icons8-java"></div>
+        </h2>
+        <p>This project was made for my first larger University assignment.</p>
+        <p>
+          The goal was to create a Java application using the Swing framework,
+          for a hypothetical activity management company.
+        </p>
+        <p>
+          This was my first real experience with Java and Swing, before this I
+          had only used Java for smaller assignments.
+        </p>
+        <p>
+          The criteria for the project had four phases, each with its own
+          requirements. Each phase added more functionality to the application.
+        </p>
+        <p>
+          Phases one through three were developed as purely console based
+          interactions, this takes the user through a series of inputs and
+          options to manage their itinerary. At the end it then saves this
+          itinerary to a file using a specific format, this file can then be
+          loaded back into the application. The fourth phase was to create a GUI
+          using the Swing framework, this was a challenge for me as I had never
+          used Swing outside of practice, small tasks before. The GUI only had
+          to be a very simple interface, it just had to show the itineraries,
+          and allow the user to double click an itinerary for further
+          information.
+        </p>
+        <p>
+          The project was a great learning experience, and I learned a lot about
+          Java and Swing. Since it is a University project, I cannot share the
+          code publicly, but I can share the results from it.
+        </p>
+        <p>
+          For this project, I recieved 70%, which when combined with the first
+          assessment for the module, gave me a final mark of 75% for the module,
+          which is a 1st class grade.
+        </p>
+        <div class="project-screenshot-gallery">
+          <span style="font-weight: 600">Screenshot Gallery:</span>
+          <div class="screenshot-slide">
+            <img
+              src="images/itinerary-manager/itinerary-manager-ss.png"
+              alt="Itinerary Manager Project Screenshot"
+              style="max-width: 50vw"
+            />
+          </div>
+          <div class="screenshot-slide">
+            <img
+              src="images/itinerary-manager/im-console-ss.png"
+              alt="Itinerary Manager Project Console Screenshot"
+              style="max-width: 50vw"
+            />
+          </div>
+          <div class="screenshot-slide">
+            <img
+              src="images/itinerary-manager/im-gui-ss.png"
+              alt="Itinerary Manager Project GUI Screenshot"
+              style="max-width: 50vw"
+            />
+          </div>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/itinerary-manager/itinerary-manager-ss.png"
+                style="width: 100%"
+                onclick="currentSlide(1)"
+                alt="Itinerary Manager Project Screenshot"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/itinerary-manager/im-console-ss.png"
+                style="width: 100%"
+                onclick="currentSlide(2)"
+                alt="Itinerary Manager Project Console Screenshot"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/itinerary-manager/im-gui-ss.png"
+                style="width: 100%"
+                onclick="currentSlide(3)"
+                alt="Itinerary Manager Project GUI Screenshot"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <h2>
+          Project 2: University Project - SQL Query Development
+          <img src="images/sql.png" style="width: 36px" />
+        </h2>
+        <p>
+          <a
+            href="https://github.com/LukeEastwood080506/TSQL-Example-Queries-For-ICA/blob/main/superheroes%20query%20list.sql"
+            target="_blank"
+          >
+            GitHub Repository
+          </a>
+        </p>
+        <p>
+          This project was made for my second University assignment, which was
+          focused on SQL and database management.
+        </p>
+
+        <p>
+          This project was my first time ever using SQL, and writing queries to
+          a database.
+        </p>
+        <p>
+          The goal was to create a 'portfolio' of SQL queries related to a
+          specified database, to improve our knowledge on how SQL and it's
+          specific features work.
+        </p>
+        <p>
+          For this project, I used SQL Server, alongside the SQL Server
+          Management Studio (SSMS) to write and test my queries. Outside of the
+          project, I also practiced using the online platform LeetCode, which
+          has a section dedicated to SQL queries, for this I decided to use
+          MySQL, to broaden my knowledge some more.
+        </p>
+        <p>
+          For this project, I wrote over 40 queries, covering a wide variety of
+          topics, such as joins, subqueries, aggregations, and functions.
+        </p>
+        <p>
+          The project was a great learning experience, and I learned a lot about
+          SQL and how to write queries. Since it is a University project. The
+          queries can be found in the GitHub repository.
+        </p>
+        <div class="project-screenshot-gallery">
+          <span style="font-weight: 600">Screenshot Gallery:</span>
+          <div class="screenshot-slide">
+            <img
+              src="images/sql-project-ss.png"
+              alt="Some Example Queries Screenshot"
+            />
+          </div>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/sql-project-ss.png"
+                style="width: 100%"
+                onclick="currentSlide(4)"
+                alt="Some Example Queries Screenshot"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <h2>
+          Project 3: University Project - Team Systems Design Project
+          <img src="images/system-design.png" style="width: 32px" />
+        </h2>
+        <p>
+          This project was made for my third University assignment, which was a
+          team-based project focused on systems and app design/planning.
+        </p>
+        <p>
+          This project was my first time ever working in a team on a project,
+          and it was a great learning experience.
+        </p>
+        <p>
+          I was the team leader for this project, and I was responsible for
+          coordinating the team and ensuring that we met our deadlines. I also
+          took on the role of the design for the overall system, and
+          specifically the home page of the application.
+        </p>
+        <p>
+          For this project, we had to plan out and design the app idea,
+          functionality, and the way the app would work using a variety of
+          diagrams.
+        </p>
+        <p>
+          The project was a great learning experience, and I learned a lot about
+          systems design and how to work in a team. Since it is a University
+          project, I cannot share the entire document publicly, but I can share
+          some screenshots with some information redacted, as well as the
+          results from it.
+        </p>
+        <p>
+          For this project, I received 83%, which is a 1st class grade. 25% of
+          the mark was for the group work, and 75% was for the individual work.
+        </p>
+        <div class="project-screenshot-gallery">
+          <span style="font-weight: 600">Screenshot Gallery:</span>
+          <div class="screenshot-slide">
+            <img
+              src="images\systems-design\slideshow-main-page.png"
+              alt="Our Systems Design Project Main Page"
+            />
+          </div>
+          <div class="screenshot-slide">
+            <img
+              src="images\systems-design\overall-preview.png"
+              alt="My Systems Design Project Overall Preview"
+            />
+          </div>
+          <div class="screenshot-slide">
+            <img
+              src="images\systems-design\example-of-wireframes.png"
+              alt="Example of some of my wireframes for the project"
+            />
+          </div>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images\systems-design\slideshow-main-page.png"
+                style="width: 100%"
+                onclick="currentSlide(5)"
+                alt="Our Systems Design Project Main Page"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images\systems-design\overall-preview.png"
+                style="width: 100%"
+                onclick="currentSlide(6)"
+                alt="My Systems Design Project Overall Preview"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images\systems-design\example-of-wireframes.png"
+                style="width: 100%"
+                onclick="currentSlide(7)"
+                alt="Example of some of my wireframes for the project"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="section-subtitle"
+        id="personal-projects"
+        style="padding-top: 20px; font-weight: 600"
+      >
+        Personal Projects
+      </p>
+    </div>
+    <div class="footer">
+      <p class="footer-text">&copy; 2025 Luke Eastwood. All rights reserved.</p>
+    </div>
+  </body>
 </html>

@@ -131,9 +131,12 @@ body {
   gap: 40px;
   max-width: 900px;
   margin: 0 auto;
-  margin-left: 33vw;
   margin-bottom: 50px;
-  width: 100%;
+  width: 33vw;
+  background: #e6e7e0;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .school {
@@ -231,6 +234,10 @@ body {
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  background: #e6e7e0;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .project {
